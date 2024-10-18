@@ -1,0 +1,221 @@
+body{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+.viewport{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/templo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.style-box{
+  background: #4bc7f4b6;
+  border: 4px solid #499BDA;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.menu-box{
+  width: 40%;
+  height: 25rem;
+  
+}
+
+.menu-content{
+  display: grid;
+  justify-content: center;
+  padding-block: 20px;
+}
+.menu-buttons{
+  display: grid;
+  gap: 20px;
+  margin-block: 20px;
+}
+.menu-title{
+  font-size: 1.5rem;
+}
+
+.btn{
+  height: 2.6rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.btn:hover{
+  background: #41FFE1;
+}
+
+
+.inactive{
+  display: none;
+}
+
+@keyframes open-window {
+   0%{
+      width: 10px;
+      border: 4px solid #499BDA;
+   }
+   30%{
+      width: 60%;
+      
+      border: 4px solid #499BDA;
+   }
+   100%{
+      transition-delay:1s ;
+      width: 35rem;
+      height: 25rem;
+      background: #4bc7f4b6;
+      border: 4px solid #499BDA;
+      border-radius: 20px; 
+   }
+}
+
+.load-box{
+  overflow: hidden;
+  animation: open-window 500ms ease-in forwards;
+}
+.load-title{
+  overflow: hidden;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.load-saves{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap:10px
+}
+
+.item{
+  width: 70%;
+  height: 3.8rem;
+  border:2px solid white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.item:hover{
+   background: #41FFE1;
+}
+.game-space{
+   display: flex;
+   gap: 20px;
+}
+
+.game-options{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game_option{
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+  height: 5rem;
+  border: 2px solid white; 
+}
+
+.create-box{
+  animation: open-window 500ms ease-in-out forwards;
+}
+.data-game{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 90%;
+   gap: 2rem;
+}
+.create-inputs{
+   display: grid;
+   place-content: center;
+   gap:2rem
+}
+.editor{
+  width: 40vh;
+  height: 2.3rem;
+  border: 2px solid white;
+  background: #00000031;
+}
+.editor::placeholder{
+  font-size: 1rem;
+  color: #ffffff8f;
+  padding-inline: 1rem;
+}
+.editor:focus{
+  border-color:#9cf3ff;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+}
+
+
+.game_container{
+  display: grid;
+  width: auto;
+  height: auto;
+  overflow:visible;
+  place-content: center;
+  padding: 20px;
+}
+.columnas{
+  display: flex;
+  gap:20px;
+}
+.container-ficha{
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background:#1e2533c0 ;
+  margin: 5px;
+}
+.casilla{
+  position: absolute;
+  font-size: 2.7rem;
+  text-align: center;
+  bottom:-45px ;
+  left: -2px;
+}
+.winner{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #1f26355d;
+  z-index: 1;
+}
+.winner-screen{
+  display: flex;
+  flex-direction: column;
+  background: #4bc7f4b6;
+  border: 4px solid #499BDA;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 7rem;
+  width: 14rem;
+  gap:10px
+
+}
+.text-winner{
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}

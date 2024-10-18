@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="michi-game.css">
+  <title>game</title>
+</head>
+<body>
+  <main class="viewport">
+    <section class="menu center">
+       <div class="menu-box style-box">
+          <div class="menu-content">
+            <h2 class="menu-title">Tick Tack game</h2>
+            <div class="menu-buttons">
+              <button class="btn start-button" id="start">empezar</button>
+              <button class="btn load-button " id="load-game">load</button>
+            </div>
+          </div>
+       </div>
+    </section>
+    <section class="create center inactive">
+       <div class="create-box style-box">
+          <div class="data-game" >
+             <div class="create-inputs">
+                <input class="editor" id="height-map" type="number" placeholder="altura" required >
+                <input class="editor" id="wide-map" type="number" placeholder="ancho" required >
+                <input class="editor" id="group-map" type="number" placeholder="cantidad" required >
+             </div>
+             <button class="btn" id="start-game">empezar</button>
+          </div>
+       </div>
+    </section>
+    <section class="load center inactive">
+        <div class="load-box">
+          <div class="load-content">
+              <h2 class="load-title">partidas guardadas</h2>
+              <div class="load-saves"></div>
+          </div>
+        </div>
+    </section>
+    <section class="game center inactive">
+        <div class="game-space">
+          <aside class="game-options">
+            <article class="game_option style-box game-name">turno: [⚫]</article>
+            <article class="game_option style-box">guardar partida [S]</article>
+            <article class="game_option style-box">salir [X]</article>
+          </aside>
+          <div class="game_container style-box">
+             
+          </div>
+        </div>
+        <div class="winner center inactive">
+          <div class="winner-screen center">
+            <span class="text-winner">texto ramdon</span>
+            <div class="winner-buttons">
+              <button class="reiniciar btn">reiniciar</button>
+            </div>
+          </div>
+           
+        </div>
+    </section>
+  </main>
+  <script src="./dist/main.js"></script>
+</body>
+</html>
